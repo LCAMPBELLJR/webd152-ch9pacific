@@ -129,13 +129,14 @@ footer {
 }
 table {
   border-bottom: 1px solid #1976d2;
-  border-collapse: collapse;
+  border-collapse: separate; /* Change this style to separate because I liked the look of the white border between the cells */
 }
 th {
   background-color: #1976d2;
   color: #fff;
 }
-td {
+td,
+th {
   padding: 0.5em;
   /* border: 2px solid #39c;  */
 }
@@ -145,6 +146,10 @@ td {
 .text {
   text-align: left; /* te: */
 }
+.text {
+  text-align: left; /* ta:l */
+}
+
 tr:nth-last-of-type(odd) {
   background-color: #ffcd6f; /* bgc#ffcd6f */
 }
@@ -172,6 +177,7 @@ tr:nth-last-of-type(odd) {
   It is often used to add cosmetic content to an element with the content property. 
   The content property is a handy trick for revealing extra bits of data hidden in HTML. 
   Make sure you add the colon after the word and the space and then the closing quotation mark. */
+
   td.package::before {
     content: "Package:";
   }
