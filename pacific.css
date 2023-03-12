@@ -211,7 +211,7 @@ tr:nth-last-of-type(odd) {
   td:last-of-type {
     border-bottom: 2px solid #1b69b2; /*bb2-solid#1b69b2 */
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) {
     #wrapper {
       margin: auto; /* m;a */
       width: 80%;
